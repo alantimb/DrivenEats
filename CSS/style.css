@@ -1,0 +1,48 @@
+.mobile {
+    /* aqui vai o tamanho da tela pra mobiel */
+    width: 414px;
+    height: 1026px;
+    background-color: red;
+
+    position: relative;
+}
+
+.menu-topo {
+    width: 100%;
+    height: 92px;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.conteudo-principal {
+    width: 100%;
+    height: 842px;
+
+    margin-top: 92px;
+    margin-bottom: 92px;
+}
+
+.menu-final-pedido {
+    width: 100%;
+    height: 92px;
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+overflow:
+
+/*
+1) [OPCIONAL - CSS] é interessante redimensioná-la para se adaptar às diferentes 
+telas de celular: MEDIA QUERY
+
+2) [CSS] scroll horizontal: overflow: x scroll ACHO
+
+3) [CSS] hover alguma coisa pra selecionar o item
+
+4) [javascript] SE as opções estiverem marcadas, ENTÃO liberar o botão de finalizar pedido
+*/
+
