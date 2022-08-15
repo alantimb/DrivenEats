@@ -1,19 +1,36 @@
+/* mobile version only */
 .mobile {
     width: 100vw;
     height: 100vh;
     background-color: green;
 
-    /* position: relative; */
-
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: space-between; */
 }
 
+/* .mobile2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    position: relative;
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+}  */
+/* DISPLAY NONE */
+/* .confirmacao-de-pedido {
+    width: 90vw;
+    height: 353px;
+    background-color: #50d074;
+    ;
+}  */
+
+/* comando para que todas as divs não aumentem com mudança de padd e marg */
 * {
     box-sizing: border-box;
 }
-
 /* menu superior */
 .menu-topo {
     background-color: #cf2b2b;
@@ -60,22 +77,18 @@
 }
 
 /* div do prato principal */
-.prato-principal {
+.pratos-principais {
     width: 100%;
     padding-top: 20px;
     background-color: #e5e5e5;
-    /* padding-left: 20px;
-    box-sizing: border-box; */
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* overflow-x: scroll; */
-
 }
 
 /* título: primeiro, seu prato */
-.prato-principal>h1 {
+.pratos-principais>h1 {
     color: #333333;
     font-family: 'Righteous', cursive;
     font-size: 26px;
@@ -88,11 +101,10 @@
     padding-bottom: 5px;
     display: flex;
     overflow-x: scroll;
-    /* flex-direction: row; */
-    /* flex-wrap: wrap; */
-    /* flex-shrink: 0; */
-    /* justify-content: space-between; */
+}
 
+.opcoes::-webkit-scrollbar {
+    display: none;
 }
 
 /* cada div individual do prato/alimento */
@@ -103,11 +115,17 @@
     margin-left: 20px;
     background-color: #ffffff;
     border-radius: 9px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 18px 14px 13px 14px;
+}
+
+/* seletor em verde do mouse */
+.selecionado {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 }
 
 /* foto dos pratos/bebidas */
@@ -126,6 +144,7 @@
     font-weight: 700px;
 }
 
+/* descrição dos alimentos */
 .opcao p {
     color: #a6a6a6;
     font-family: 'Roboto', sans-serif;
@@ -142,7 +161,7 @@
 }
 
 /* div das bebidas */
-.bebida {
+.bebidas {
     width: 100%;
     padding-top: 20px;
     background-color: #e5e5e5;
@@ -153,7 +172,7 @@
 }
 
 /* título: agora, sua bebida */
-.bebida>h1 {
+.bebidas>h1 {
     color: #333333;
     font-family: 'Righteous', cursive;
     font-size: 26px;
@@ -161,7 +180,8 @@
     margin-left: 20px;
 }
 
-.sobremesa {
+/* div das sobremesas */
+.sobremesas {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -172,7 +192,8 @@
     justify-content: center;
 }
 
-.sobremesa>h1 {
+/* título: por fim, sua sobremesa */
+.sobremesas>h1 {
     color: #333333;
     font-family: 'Righteous', cursive;
     font-size: 26px;
@@ -180,11 +201,13 @@
     margin-left: 20px;
 }
 
+/* espaço atrás do menu inferior */
 .menu-final-espaco {
     width: 100%;
     height: 92px;
 }
 
+/* menu inferior */
 .menu-final {
     background-color: #ffffff;
     width: 100%;
@@ -199,6 +222,7 @@
     align-items: center;
 }
 
+/* botão INATIVO enquanto não escolher 3 pedidos */
 .botao-pedido {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -208,21 +232,42 @@
     border-radius: 50px;
     width: 90%;
     height: 61px;
+    border: none;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: absolute;
+    z-index: 1;
+}
+
+/* botão ATIVO fechar pedido */
+.fechar-pedido {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700px;
+    color: #ffffff;
+    background-color: #32B72F;
+    border-radius: 50px;
+    width: 90%;
+    height: 61px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 2;
+}
+
+/* item escondido */
+.escondido {
+    display: none;
 }
 
 
-
-/*
-
-- seg 11h
-
-2) [CSS] scroll horizontal: overflow: x scroll ACHO
-
-3) [CSS] hover alguma coisa pra selecionar o item
-
-4) [javascript] SE as opções estiverem marcadas, ENTÃO liberar o botão de finalizar pedido
-*/
+/* .opacidade {
+    background: rgba(255, 255, 255, 1.0);
+} */

@@ -27,154 +27,151 @@
                 <h2>Sua comida em 6 minutos</h2>
             </div>
         </div>
+
         <div class="menu-topo-espaco"></div>
 
-        <div class="prato-principal">
+        <div class="pratos-principais">
             <h1>Primeiro, seu prato</h1>
             <div class="opcoes">
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarPrato(this)">
                     <img src="./imagens-projeto3/bife-com-fritas.jpg">
-                    <h1>Bife com fritas</h1>
-                    <p>Bife com fritas, arroz e salada.</p>
-                    <h2>R$ 00,00</h2>
+                    <h1>Prato executivo 1</h1>
+                    <p>Contra filé com batatas fritas.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarPrato(this)">
                     <img src="./imagens-projeto3/prato-executivo-ligth.jpg">
-                    <h1>Frango e salada (light)</h1>
-                    <p>Filé de frango grelhado com salada e batata doce.</p>
-                    <h2>R$ 00,00</h2>
+                    <h1>Prato executivo 2</h1>
+                    <p>Filé de frango grelhado com salada.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarPrato(this)">
                     <img src="./imagens-projeto3/file-de-tilapia-com-pure.jpg">
-                    <h1>Tilápia e purê</h1>
-                    <p>Tilápia grelhada com purê de batata, arroz e feijão carioca.</p>
-                    <h2>R$ 00,00</h2>
+                    <h1>Prato executivo 3</h1>
+                    <p>Tilápia grelhada com purê de batata.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarPrato(this)">
                     <img src="./imagens-projeto3/lasanha-humm.jpg">
                     <h1>Lasanha da casa</h1>
                     <p>Lasanha à bolonhesa da casa.</p>
-                    <h2>R$ 00,00</h2>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarPrato(this)">
                     <img src="./imagens-projeto3/espaguete-com-almondegas-vegano.png">
-                    <div class="legenda">
-                        <h1>Espaguete vegano</h1>
-                        <p>Espaguete com almôndegas de proteína de soja.</p>
-                        <h2>R$ 00,00</h2>
-                    </div>
+                    <h1>Prato executivo 4</h1>
+                    <p>Espaguete com almôndegas veganas.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarPrato(this)">
                     <img src="./imagens-projeto3/churrasquinho-misto.jpg">
-                    <div class="legenda">
-                        <h1>Churrasquinho misto</h1>
-                        <p>Carne de alcatra, frango, linguiça, pão de alho e acompanhamentos.</p>
-                        <h2>R$ 00,00</h2>
-                    </div>
+                    <h1>Churrasco misto</h1>
+                    <p>Acompanha pão de alho, arroz, molho a campanha.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
             </div>
 
         </div>
 
-        <div class="bebida">
+        <div class="bebidas">
             <h1>Agora, sua bebida</h1>
             <div class="opcoes">
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarBebida(this)">
                     <img src="./imagens-projeto3/refrigerante-lata.png">
-                    <h1>Refrigerante lata (350 ml)</h1>
-                    <p>Refrigerantes 350 ml, sabores conforme imagem.</p>
-                    <h2>R$ 00,00</h2>
+                    <h1>Refri lata (350 ml)</h1>
+                    <p>Refrigerante lata (350 ml), sabores conforme imagem.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarBebida(this)">
                     <img src="./imagens-projeto3/refrigerante-600ml.jpg">
-                    <h1>Refrigerante 600 ml</h1>
-                    <p>Refrigerantes 600 ml, sabores conforme imagem.</p>
-                    <h2>R$ 00,00</h2>
+                    <h1>Refri 600 ml</h1>
+                    <p>Refrigerante garrafa (600 ml), sabores conforme imagem.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarBebida(this)">
                     <img src="./imagens-projeto3/refrigerante-2litros.jpg">
-                    <h1>Refrigerante 2 l</h1>
-                    <p>Refrigerantes 2 litros, sabores conforme imagem.</p>
-                    <h2>R$ 00,00</h2>
+                    <h1>Refri 2 l</h1>
+                    <p>Refrigerante garrafa (2 litros), sabores conforme imagem.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarBebida(this)">
                     <img src="./imagens-projeto3/guaraplus.png">
-                    <h1>Guaraná natural (290 ml)</h1>
-                    <p>Guaraná natural de copo da marca Guaraplus.</p>
-                    <h2>R$ 00,00</h2>
+                    <h1>Guaraná natural</h1>
+                    <p>Guaraná natural de copo (290 ml) da marca Guaraplus.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarBebida(this)">
                     <img src="./imagens-projeto3/delvalle-lata.png">
-                    <div class="legenda">
-                        <h1>Del Valle lata (290 ml)</h1>
-                        <p>Suco Del Valle lata, sabores conforme imagem.</p>
-                        <h2>R$ 00,00</h2>
-                    </div>
+                    <h1>Del Valle lata</h1>
+                    <p>Suco Del Valle lata (290 ml), sabores conforme imagem.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarBebida(this)">
                     <img src="./imagens-projeto3/agua-com-e-sem-gas.jpg">
-                    <div class="legenda">
-                        <h1>Água mineral (500 ml)</h1>
-                        <p>Água mineral Crystal com e sem gás. </p>
-                        <h2>R$ 00,00</h2>
-                    </div>
+                    <h1>Água mineral</h1>
+                    <p>Água mineral Crystal (500 ml) com e sem gás. </p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
             </div>
         </div>
 
-        <div class="sobremesa">
+        <div class="sobremesas">
             <h1>Por fim, sua sobremesa</h1>
             <div class="opcoes">
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarSobremesa(this)">
                     <img src="./imagens-projeto3/pudim.png">
                     <h1>Pudim</h1>
                     <p>Pudim de leite de condensado.</p>
-                    <h2>R$ 00,00</h2>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
-                    <img src="./imagens-projeto3/quindim.png">
-                    <h1>Quindim</h1>
-                    <p>Quindim de ovos.</p>
-                    <h2>R$ 00,00</h2>
-                </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarSobremesa(this)">
                     <img src="./imagens-projeto3/mousse.jpg">
                     <h1>Mousse</h1>
                     <p>Opções de maracujá, chocolate e limão.</p>
-                    <h2>R$ 00,00</h2>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarSobremesa(this)">
                     <img src="./imagens-projeto3/bolos-no-pote.png">
                     <h1>Bolo de pote</h1>
-                    <p>Opções de morango, chocolate brando e brigadeiro.</p>
-                    <h2>R$ 00,00</h2>
+                    <p>Opções de morango e chocolate.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarSobremesa(this)">
                     <img src="./imagens-projeto3/brigadeirao.jpg">
-                    <div class="legenda">
-                        <h1>Brigadeirão</h1>
-                        <p>Brigadeirão de chocolate.</p>
-                        <h2>R$ 00,00</h2>
-                    </div>
+                    <h1>Brigadeirão</h1>
+                    <p>Brigadeirão de chocolate.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
-                <div class="opcao">
+                <div class="opcao" onclick="selecionarSobremesa(this)">
+                    <img src="./imagens-projeto3/quindim.png">
+                    <h1>Quindim</h1>
+                    <p>Quindim de ovos e coco.</p>
+                    <h2>R$ <span>00,00</span></h2>
+                </div>
+                <div class="opcao" onclick="selecionarSobremesa(this)">
                     <img src="./imagens-projeto3/salada-de-frutas.jpg">
-                    <div class="legenda">
-                        <h1>Salada de Frutas</h1>
-                        <p>Opções com e sem creme de leite.</p>
-                        <h2>R$ 00,00</h2>
-                    </div>
+                    <h1>Salada de Frutas</h1>
+                    <p>Opções com e sem creme de leite.</p>
+                    <h2>R$ <span>00,00</span></h2>
                 </div>
             </div>
         </div>
 
         <div class="menu-final-espaco"></div>
+
         <div class="menu-final">
             <button class="botao-pedido">Selecione os 3 itens <br>para fechar o pedido</button>
+            <button class="fechar-pedido escondido">Fechar pedido</button>
         </div>
     </div>
 
-    <!--<script src="/script.js"></script>-->
+    <!-- <div class="mobile2 escondido">
+        <div class="confirmacao-de-pedido">
+
+        </div>
+    </div> -->
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
