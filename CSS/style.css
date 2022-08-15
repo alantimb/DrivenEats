@@ -31,6 +31,7 @@
 * {
     box-sizing: border-box;
 }
+
 /* menu superior */
 .menu-topo {
     background-color: #cf2b2b;
@@ -103,6 +104,7 @@
     overflow-x: scroll;
 }
 
+/* para esconder a scrollbar na versão mobile */
 .opcoes::-webkit-scrollbar {
     display: none;
 }
@@ -266,8 +268,3 @@
 .escondido {
     display: none;
 }
-
-
-/* .opacidade {
-    background: rgba(255, 255, 255, 1.0);
-} */
