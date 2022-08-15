@@ -68,6 +68,7 @@ function selecionarSobremesa(botao) {
     return sobremesaEscolhida, sobremesaPreco;
 }
 
+
 // função que habilita o botão "fechar pedido" após os 3 itens selecionados
 function habilitarFechaPedido() {
     // SE o botão "fechar pedido" estiver escondido, ENTÃO o código vai prosseguir
@@ -93,24 +94,47 @@ function habilitarFechaPedido() {
     }
 }
 
+// soma os preços 
+// function somaPreco(pratoPreco, bebidaPreco, sobremesaPreco) {
+//     let pratoPrice = Number(pratoPreco.replace(",", "."));
+//     let bebidaPrice = Number(bebidaPreco.replace(",", "."));
+//     let sobremesaPrice = Number(sobremesaPreco.replace(",", "."));
+//     const price = pratoPrice + bebidaPrice + sobremesaPrice;
 
-function somaPreco(pratoPreco, bebidaPreco, sobremesaPreco) {
+//     return price;
+// }
+
+// função que envia a mensagem para o zapzap
+function enviarMensagem() {
+    let dessertSelected = document.querySelector('.sobremesas .selecionado .sobremesa-escolhida');
+    let sobremesaEscolhida = dessertSelected.innerHTML;
+
+    let dessertPrice = document.querySelector('.sobremesas .selecionado .valor');
+    let sobremesaPreco = dessertPrice.innerHTML;
+
+    let drinkSelected = document.querySelector('.bebidas .selecionado .bebida-escolhida');
+    let bebidaEscolhida = drinkSelected.innerHTML;
+
+    let drinkPrice = document.querySelector('.bebidas .selecionado .valor');
+    let bebidaPreco = drinkPrice.innerHTML;
+
+    let plateSelected = document.querySelector('.pratos-principais .selecionado .prato-escolhido');
+    let pratoEscolhido = plateSelected.innerHTML;
+
+    let platePrice = document.querySelector('.pratos-principais .selecionado .valor');
+    let pratoPreco = platePrice.innerHTML;
+
     let pratoPrice = Number(pratoPreco.replace(",", "."));
     let bebidaPrice = Number(bebidaPreco.replace(",", "."));
     let sobremesaPrice = Number(sobremesaPreco.replace(",", "."));
     const price = pratoPrice + bebidaPrice + sobremesaPrice;
 
-    return price;
+    let mensagem = `Olá, gostaria de fazer o pedido: \n- Prato: ${pratoEscolhido}\n- Bebida: ${bebidaEscolhida}\n- Sobremesa: ${sobremesaEscolhida}\nTotal: R$ ${price.toFixed(2)}`;
+    let url = "https://wa.me/5521969425043?text=" + encodeURIComponent(mensagem);
+    window.open(url, '_blanck');
 }
 
-// função que envia a mensagem para o zapzap
-function enviarMensagem() {
-    let mensagem = `Olá, gostaria de fazer o pedido: \n- Prato: ${pratoEscolhido}\n- Bebida: ${bebidaEscolhida}\n- Sobremesa: ${sobremesaEscolhida}\nTotal: R$ ${somaPreco(pratoPreco, bebidaPreco, sobremesaPreco)}`;
-    let url = "https://wa.me/5521969425043?text=" + encondeURIComponent(mensagem);
-    window.open(url, _blanck);
-}
-
-
+// encodeURIComponent(uri)
 
 // function fecharPedido() {
 //     // SE o prato principal estiver definido
