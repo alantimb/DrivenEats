@@ -14,6 +14,7 @@
     box-sizing: border-box;
 }
 
+/* menu superior */
 .menu-topo {
     background-color: #cf2b2b;
     width: 100%;
@@ -29,11 +30,13 @@
     align-items: center;
 }
 
+/* div dos títulos do menu superior */
 .titulo {
     position: absolute;
     margin-left: 20px;
 }
 
+/* marca: DrivenEats */
 .titulo h1 {
     color: #ffffff;
     font-family: 'Righteous', cursive;
@@ -42,6 +45,7 @@
     font-weight: 400px;
 }
 
+/* slogan:  */
 .titulo h2 {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
@@ -49,17 +53,17 @@
     font-weight: 400px;
 }
 
+/* espaço atrás do menu superior */
 .menu-topo-espaco {
     width: 100%;
     height: 92px;
 }
 
-/* usar o seletor universal * para colocar bx-sizing:border-box em todos os elementos.
-caso aplicável. CHECAR AO FINAL */
+/* div do prato principal */
 .prato-principal {
     width: 100%;
     padding-top: 20px;
-    background-color: lightblue;
+    background-color: #e5e5e5;
     /* padding-left: 20px;
     box-sizing: border-box; */
 
@@ -70,7 +74,8 @@ caso aplicável. CHECAR AO FINAL */
 
 }
 
-.prato-principal h1 {
+/* título: primeiro, seu prato */
+.prato-principal>h1 {
     color: #333333;
     font-family: 'Righteous', cursive;
     font-size: 26px;
@@ -78,7 +83,7 @@ caso aplicável. CHECAR AO FINAL */
     margin-left: 20px;
 }
 
-/* aqui embaixo são as opções de prato principal */
+/* opções de prato principal */
 .opcoes {
     padding-bottom: 5px;
     display: flex;
@@ -90,31 +95,65 @@ caso aplicável. CHECAR AO FINAL */
 
 }
 
-/* PREENCHER ESSAS DIVS PRA VER SE APÓS PREENCHIDAS, O SCROLL FUNCIONA (SEM O WRAP) */
-.opcoes div {
+/* cada div individual do prato/alimento */
+.opcao {
     width: 172px;
     height: 216px;
     margin-top: 20px;
     margin-left: 20px;
     background-color: #ffffff;
     border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 18px 14px 13px 14px;
+}
 
-    position: relative;
-    /* OPÇÕES DE DENTRO SERÃO ABSOLUTE, N SE ESQUEÇA */
+/* foto dos pratos/bebidas */
+.opcao img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
 
 }
 
+/* nome dos pratos/bebidas */
+.opcao h1 {
+    color: #333333;
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    font-weight: 700px;
+}
+
+.opcao p {
+    color: #a6a6a6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300px;
+}
+
+/* preço individual dos alimentos */
+.opcao h2 {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+/* div das bebidas */
 .bebida {
     width: 100%;
     padding-top: 20px;
-    background-color: lightsalmon;
+    background-color: #e5e5e5;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.bebida h1 {
+/* título: agora, sua bebida */
+.bebida>h1 {
     color: #333333;
     font-family: 'Righteous', cursive;
     font-size: 26px;
@@ -126,14 +165,14 @@ caso aplicável. CHECAR AO FINAL */
     width: 100%;
     padding-top: 20px;
     padding-bottom: 10px;
-    background-color: lightgreen;
+    background-color: #e5e5e5;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.sobremesa h1 {
+.sobremesa>h1 {
     color: #333333;
     font-family: 'Righteous', cursive;
     font-size: 26px;
